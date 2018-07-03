@@ -18,7 +18,7 @@ class GitHubUser{
       let user = await response.json();
       user.then((data)=>{
         self.data = data;
-        return cb(data);
+        cb(data);
       })
     }
 
